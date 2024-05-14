@@ -1,0 +1,29 @@
+<div class="p-0 m-0 w-full border border-black">
+  <div
+  class="border border-red-600 w-full p-0 img1 h-[480px] md:h-96 lg:h-[620px] text-left subpixel-antialiased flex justify-center"
+  [ngStyle]="{
+    background: 'url(' + '/assets/images/auditorioBN2.jpg' + ')  no-repeat center top / cover'
+  }"
+  >
+  <div *ngIf="videoOK" class="pt-[73px]">
+    <video
+      id="my-video"
+      class="video-js"
+      controls
+      preload="auto"
+      width="662"
+      height="360"
+      poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0CJdK6_lwQSAY90yngAzlAusrbGyQxMnm9A&s"
+      data-setup="{}"
+      (error)="videoErr()"
+    >
+    <source src="https://3a016ba82ff0.us-east-1.playback.live-video.net/api/video/v1/us-east-1.058264146848.channel.0xx4NqX159Mi.m3u8" type="application/x-mpegURL">
+    <p class="">
+    Para ver este video, por favor habilitar javascript y considere la actualización de su navegador a un navegador que
+    <a href="https://videojs.com/html5-video-support/" target="_blank">Soporte HTML5</a>
+    </p>
+    </video>
+    </div>
+  </div>
+
+</div>
