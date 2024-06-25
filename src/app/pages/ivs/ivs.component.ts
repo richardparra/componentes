@@ -3,6 +3,8 @@ import { Component,HostListener, ElementRef} from '@angular/core';
 
 import { ScriptService } from '../../services/script.service';
 
+import { environment } from '@environments/environment';
+
 @Component({
   selector: 'app-ivs',
   standalone: true,
@@ -20,6 +22,7 @@ export class IvsComponent {
 
     this.myVideo = document.getElementById('my-video');
 
+    console.log(environment.demo);
     /*
     setInterval(() => {
       this.checkVideo();

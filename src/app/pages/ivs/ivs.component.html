@@ -1,18 +1,27 @@
 <div class="p-0 m-0 w-full border border-black">
   <div
-  class="border border-red-600 w-full p-0 img1 h-[480px] md:h-96 lg:h-[620px] text-left subpixel-antialiased flex justify-center"
+  class="border border-red-600 p-0 img1
+  h-[480px] w-full
+  md:h-[620px] md:w-full
+  lg:h-[620px] lg:w-full
+  xl:h-[760px] xl:w-full
+  2xl:h-[760px] 2xl:w-full
+  text-left subpixel-antialiased flex justify-center"
   [ngStyle]="{
-    background: 'url(' + '/assets/images/auditorioBN2.jpg' + ')  no-repeat center top / cover'
+    background: 'url(' + '/assets/images/auditorioBN4.jpg' + ')  no-repeat center top / cover'
   }"
   >
-  <div *ngIf="videoOK" class="pt-[73px]">
+  <div class="pt-[48px] md:pt-[62px] lg:pt-[62px] xl:pt-[78px]">
     <video
       id="my-video"
-      class="video-js"
+      class="video-js
+      w-[390px] h-[246px]
+      md:w-[540px] md:h-[320px]
+      lg:w-[540px] lg:h-[320px]
+      xl:w-[662px] xl:h-[360px]
+      2xl:w-[720px] 2xl:h-[480px]"
       controls
       preload="auto"
-      width="662"
-      height="360"
       poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0CJdK6_lwQSAY90yngAzlAusrbGyQxMnm9A&s"
       data-setup="{}"
       (error)="videoErr()"
